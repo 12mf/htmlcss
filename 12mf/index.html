@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/css.css" />
+<script language="javascript" type="text/javascript" src="js/1_jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/2_jquery_configuration.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.transform-0.9.3.min.js"></script>
+
+<title>Test</title>
+
+</head>
+
+<body>
+<div class="glob">
+	<div class="page_spinner"></div>
+	<div class="main">
+		<div class="center">
+			<div class="centerHolder">
+				<header>
+					<h1><a id="logo" href="#!/pageHome">tungvt</a></h1>
+					<div class="followHolder">
+						<span>Social network</span>
+						<ul>
+							<li><a href="#"><img src="images/followIcon1.png" /></a></li>
+							<li><a href="#"><img src="images/followIcon2.png" /></a></li>
+							<li><a href="#"><img src="images/followIcon3.png" /></a></li>
+							<li><a href="#"><img src="images/followIcon4.png" /></a></li>
+							<li><a href="#"><img src="images/followIcon5.png" /></a></li>
+							<li><a href="#"><img src="images/followIcon6.png" /></a></li>
+						</ul>
+					</div>
+				</header>
+			</div>
+			<div class="splashHolder">
+				<nav class="menu">
+					<ul id="menu">   
+					       	<li><a href="#!/pageHome"><div class="imgHolder"></div><div class="extraHolder"></div></a></li>
+                            <li class="with_ul">
+                                <a href="#!/pageAbout">
+                                    <div class="imgHolder">
+                                        <img class="pic" src="images/splash_pic1.png" alt="">
+                                    </div>
+                                    <div class="extraHolder">
+                                        <span class="mText1">about us</span>
+                                        <span class="mOver"></span>
+                                    </div>
+                                </a>
+								<ul class="submenu_1">
+									<li><a href="#!/pageMore">who we are</a><span class="corner"></span></li>
+									<li><a href="#!/pageMore">capabilities</a></li>
+									<li class="bgNone"><a href="#!/pageMore">our team</a></li>
+								</ul>
+                            </li>
+                             <li>
+                                <a href="#!/pageClients">
+                                    <div class="imgHolder">
+                                        <img class="pic" src="images/splash_pic2.png" alt="">
+                                    </div>
+                                    <div class="extraHolder">
+                                        <span class="mText1">clients</span>
+                                        <span class="mOver"></span>
+                                    </div>
+                                </a>
+                             </li>
+			                 <li>
+                                <a href="#!/pageServices">
+                                    <div class="imgHolder">
+                                        <img class="pic" src="images/splash_pic3.png" alt="">
+                                    </div>
+                                    <div class="extraHolder">
+                                        <span class="mText1">services</span>
+                                        
+                                        <span class="mOver"></span>
+                                    </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="#!/pageWorks">
+                                    <div class="imgHolder">
+                                        <img class="pic" src="images/splash_pic4.png" alt="">
+                                    </div>
+                                    <div class="extraHolder">
+                                        <span class="mText1">works</span>
+                                        
+                                        <span class="mOver"></span>
+                                    </div>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="#!/pageContacts">
+                                    <div class="imgHolder">
+                                        <img class="pic" src="images/splash_pic5.png" alt="">
+                                    </div>
+                                    <div class="extraHolder">
+                                        <span class="mText1">Contacts</span>
+                                       
+                                        <span class="mOver"></span>
+                                    </div>
+                                </a>
+                             </li>
+					   </ul>
+				</nav>
+			</div>
+			<article id="content">
+				<ul>
+					<li id="pageHome">
+						<div class="box1">
+							<h2 class="padBot9 divider1 magBot2">What Others Say About Me</h2>
+							<div id="scrollSets">
+                                <div class="_item">
+                                         <p><span>Michael Vien from Odesk, january 22, 2013</span><br>&quot; Thanks again Tung, you're the best...&quot;</p>
+                                </div>
+                                <div class="_item">
+                                         <p><span>Michael Vien from Odesk, december 20, 2012</span><br>&quot; Will use this guy again, he was super helpful and did more then required , very nice guy... please support him everyone! 10 STARS.&quot;</p>
+                                </div>
+                                <div class="_item">
+                                         <p><span>Howard Davidson from Odesk, november 10, 2012</span><br>&quot; Great job.&quot;</p>
+                                </div> 
+                                <div class="_item">
+                                         <p><span>Mark Smith, august 19, 2012</span><br>&quot; Tung is a fantastic programmer that got too busy. I wish we could continue using him.&quot;</p>
+                                </div>  
+                            </div>
+                             <div class="navHolder">
+                                <ul id="setNav"></ul>
+                            </div>
+						</div>
+					</li>
+					<li id="pageAbout">
+					   <div class="box">
+                            <div class="containerContent">
+                                <div class="col1 padRight1 magRight1 divider2">
+                                    <h2>About Me!</h2>
+                                    <img class="img-ava magBot1" src="images/sp-studio.jpg" alt="">
+                                    <h3>Hi there!</h3>
+                                    <p class="txt-justify">Welcome to my online portfolio!<br /> I'm Tung VT - a 25 years old living in Hanoi, Vietnam. After my 3 years of college I became addicited to building beautiful websites.<br /> I have 4+ years experience working with PHP/mySQL/HTML/CSS/jQuery. I love playing with Wordpress, CodeIgniter and other frameworks as well as doing web design.</p>
+                                </div>
+                                <div class="col4 padRight1 magRight1 divider2">
+                                    <h2>What’s New?</h2>
+                                        <div class="wrapper padBot3">
+                                            <div class="wrapper padBot2">
+                                                <div class="_icon1">
+                                                    <span class="text1">22</span>
+                                                    <span class="text2">jun</span>
+												</div>
+                                                <div class="col2">
+                                                    <h3>Up</h3>
+                                                </div>
+                                            </div>
+                                            <p class="padBot10">Praesent vestibulum mstie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque. Aenean nonummy.</p>
+                                            <a class="_link1" href="#!/pageMore">more info</a>                                        </div>
+                                        <div class="wrapper">
+                                            <div class="wrapper padBot2">
+                                                <div class="_icon1">
+                                                    <span class="text1">21</span>
+                                                    <span class="text2">jun</span>
+												</div>
+                                                <div class="col2">
+                                                    <h3>Up</h3>
+                                                </div>
+                                            </div>
+                                            <p class="padBot10">Praesent vestibulum mstie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque. Aenean nonummy.</p>
+                                            <a class="_link1" href="#!/pageMore">more info</a>                                        </div>
+                                    <a class="more magTop1" href="#!/pageMore">more news</a>
+								</div>
+                                <div class="col5">
+                                    <h2>My Clients</h2>
+                                        <div class="col3">
+                                            <figure class="figure1 padBot4">
+                                                <img src="images/mike-vien.jpg" alt="">
+                                                <figcaption>
+                                                    <h3><a href="#">Michael Vien</a></h3>
+                                                    <p>Thanks again Tung, you're the best...</p>
+                                                </figcaption>
+                                            </figure>
+                                            <figure class="figure1 padBot4">
+                                                <img src="images/mark-smith.jpg" alt="">
+                                                <figcaption>
+                                                    <h3><a href="#">MARK SMITH</a></h3>
+                                                    <p class="not-pad-bot">Tung is a fantastic programmer. I hope we could continue using him.</p>
+                                                </figcaption>
+                                            </figure>
+                                            <figure class="figure1">
+                                                <img src="images/howard-davidson.png" alt="">
+                                                <figcaption>
+                                                    <h3><a href="#">HOWARD DAVIDSON</a></h3>
+                                                    <p>Great job.</p>
+                                                </figcaption>
+                                            </figure>
+                                            <a class="more magTop3" href="#!/pageMore">view more</a>                                        </div>
+                                </div>
+                            </div>
+                       </div>	
+					</li>
+					<li id="pageClients">
+					   <div class="box">
+                        <div class="containerContent">
+                            <div class="col6 padRight2 divider2 magRight2">
+                                <h2>Clients List</h2>
+                                <h3>Praent vestibulum molestie lacus. Aenean nonummy.</h3>
+                                <p class="padBot5">Praesent vestibulum molestie lacus. Aenean nonuy hendrerit mauris. Aliquam volutpat.</p>
+                                <ul class="_list1">
+                                    <li><a href="#">Praesent vestibulum molestie</a></li>
+                                    <li><a href="#">Aenean nonummy hendrerit</a></li>
+                                    <li><a href="#">Phasellus porta</a></li>
+                                    <li><a href="#">Fusce suscipit varius mi</a></li>
+                                    <li><a href="#">Cum sociis natoque penati</a></li>
+                                    <li><a href="#">Bus et magnis dis ent</a></li>
+                                    <li><a href="#">Montes nascetur ridiculus</a></li>
+                                    <li><a href="#">Nulla dui</a></li>
+                                </ul>
+                            </div>
+                            <div class="col7 padRight3 divider2 magRight2">
+                                <h2>Be Our Client</h2>
+                                    <figure class="padBot7">
+                                        <img src="images/page2pic1.png" alt="">                                    </figure>
+                                <h3>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</h3>
+                                <p>Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Veibulum ante ipsum primis in faucibus orci luctus et ultrices posre cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa.</p>
+                            </div>
+                            <div class="col8">
+                                <h2>Most Respected Clients</h2>
+                                <ul class="_list2">
+                                    <li><a href="#"><img src="images/list1pic1.png" alt=""></a></li>
+                                    <li class="mBot1"><a href="#"><img src="images/list1pic2.png" alt=""></a></li>
+                                    <li><a href="#"><img src="images/list1pic3.png" alt=""></a></li>
+                                    <li><a href="#"><img src="images/list1pic4.png" alt=""></a></li>
+                                    <li><a href="#"><img src="images/list1pic5.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       </div>	
+					</li>
+					<li id="pageServices">
+					   <div class="box">
+                            <div class="containerContent">
+                                <div class="col9 magRight4 divider2 padRight2">
+                                    <h2>Features Overview</h2>
+                                    <figure class="figure2 magRight3 padBot8">
+                                        <img src="images/icon1.png" alt="">
+                                        <figcaption>
+                                            <h3 class="padBot11">design<br>vestibulum molestie lacus</h3>
+                                            <p>Praesent vestibulum molestie lacus. Aenean nonuy hendrerit mauris. Ali volutpat. Phasellus porta. Fusce suscipit.</p>
+                                            <a class="more magTop4" href="#!/pageMore">more</a>                                        </figcaption>
+                                    </figure>
+                                    <figure class="figure2 padBot8">
+                                        <img src="images/icon2.png" alt="">
+                                        <figcaption>
+                                            <h3 class="padBot11">creative direction<br>Aliquam erat volutpat. Duis </h3>
+                                            <p>Praesent vestibulum molestie lacus. Aenean nonuy hendrerit mauris. Ali volutpat. Phasellus porta. Fusce suscipit.</p>
+                                            <a class="more magTop4" href="#!/pageMore">more</a>                                        </figcaption>
+                                    </figure>
+                                     <figure class="figure2 magRight3">
+                                        <img src="images/icon3.png" alt="">
+                                        <figcaption>
+                                            <h3 class="padBot11">copywriting<br>Praent vestibulum molestie</h3>
+                                            <p>Praesent vestibulum molestie lacus. Aenean nonuy hendrerit mauris. Ali volutpat. Phasellus porta. Fusce suscipit.</p>
+                                            <a class="more magTop4" href="#!/pageMore">more</a>                                        </figcaption>
+                                    </figure>
+                                     <figure class="figure2">
+                                        <img src="images/icon4.png" alt="">
+                                        <figcaption>
+                                            <h3 class="padBot11">3-d modelling<br>Morbi nunc odio, gravida at.</h3>
+                                            <p>Praesent vestibulum molestie lacus. Aenean nonuy hendrerit mauris. Ali volutpat. Phasellus porta. Fusce suscipit.</p>
+                                            <a class="more magTop4" href="#!/pageMore">more</a>                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col10">
+                                    <h2>Services List</h2>
+                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida.</p>
+                                    <ul class="_list3">
+                                        <li>
+                                        <h3 class="_marker1"><a href="#">Etiam cursus leo vel metus.</a></h3>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                        </li>
+                                        <li>
+                                        <h3 class="_marker1"><a href="#">Donec in velit vel.</a></h3>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                        </li>
+                                        <li>
+                                        <h3 class="_marker1"><a href="#">In pede mi, aliquet sit amet.</a></h3>
+                                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                      </div>	
+					</li>
+					<li id="pageWorks">
+					   <div class="box">
+                        <div class="containerContent">
+                          <div class="wrapper">
+                            <h2>Recent Works</h2>
+                            <div id="jcarousel_1">
+                                    <ul>
+                                        <li><a class="pic" rel="Appendix" href="images/gallfull1.jpg">
+                                            <span class="zoomSp"></span>
+                                            <img src="images/gallpic1.png" alt="">
+                                        </a></li>
+                                        <li><a class="pic" rel="Appendix" href="images/gallfull2.jpg">
+                                            <span class="zoomSp"></span>
+                                            <img src="images/gallpic2.png" alt="">
+                                        </a></li>
+                                        <li><a class="pic" rel="Appendix" href="images/gallfull3.jpg">
+                                            <span class="zoomSp"></span>
+                                            <img src="images/gallpic3.png" alt="">
+                                        </a></li>
+                                        <li><a class="pic" rel="Appendix" href="images/gallfull4.jpg">
+                                            <span class="zoomSp"></span>
+                                            <img src="images/gallpic4.png" alt="">
+                                        </a></li>
+                                        <li><a class="pic" rel="Appendix" href="images/gallfull5.jpg">
+                                            <span class="zoomSp"></span>
+                                            <img src="images/gallpic5.png" alt="">
+                                        </a></li>
+                                    </ul>
+                            </div> 
+                                <div class="btnHolder">
+                                   <div class="scrButn left">
+                                        <a href="#" class="prevBtn"><img src="images/sliderPrev.png" alt=""></a>                                   </div> 
+                                   <div class="scrButn right">  
+                                        <a href="#" class="nextBtn"><img src="images/sliderNext.png" alt=""></a>                                   </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>	
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+	<div class="extraElem"></div>
+	<!--  === FOOTER ===  -->
+	<footer>
+		<div class="mainFooter">
+			<div class="privHold">
+				<div class="textPrivacy">
+					tungvt &copy; 2012 | <a class="color1" href="#!/pagePrivacy">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

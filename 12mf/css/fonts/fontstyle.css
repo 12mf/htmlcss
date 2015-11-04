@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'DINCond-light';
+	src: url('./dincond-light-opentype.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DINCond-bold';
+	src: url('./dincond-bold-opentype.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}

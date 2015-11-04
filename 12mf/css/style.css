@@ -1,0 +1,116 @@
+/* =Styles Import
+--------------------------------------------------------------------------------------- */
+@import url("global.css");
+@import url("layout.css");
+
+/* =Body
+--------------------------------------------------------------------------------------- */
+body { font-family: Arial, "Trebuchet MS", Helvetica, sans-serif; color: black; background: url(../images/bgPic.jpg) 50% 25% no-repeat; line-height: 18px; min-height: 100%; position: absolute; width: 100%; height: 100%; overflow: hidden;}
+a { color: #fff; text-decoration: none;}
+p { font-family: Arial, sans-serif; padding-bottom: 18px; font-size: 13px; color: #8A7372; line-height: 20px;}
+.glob { width: 100%; height: 100%; position: absolute; overflow: hidden;}
+.txt-justify { text-align: justify;}
+.not-pad-bot { padding-bottom: 0;}
+.page_spinner { position: absolute; background: url(../images/loader.gif) 50% 50% no-repeat #F5F3F2; z-index: 99; width: 100%; height: 100%; top: 0; left: 0;}
+.main { margin: 0px auto 0 auto; width: 950px; z-index: 2; height: 100%;}
+.extraElem { position: absolute; top: 0; width: 100%; z-index: 1; height: 6px; background: #B02934;}
+::selection { background: #B02934; color: #fff;}
+/* =Center
+--------------------------------------------------------------------------------------- */
+.center { padding: 20px 0 0 0; width: 100%;}
+.centerHolder { width: 950px; position: relative; z-index: 2; top: 0; margin: 0 auto; height: 108px;}
+.splashHolder { position: absolute; z-index: 2; width: 950px;}
+/* =Header
+--------------------------------------------------------------------------------------- */
+header { position: relative; width: 100%; height: 92px; display: inline-block; float: left;}
+header h1 { float: left; padding: 0 0 0 0px;}
+header #logo { text-indent: -9999px; background-color: #B02934; width: 156px; height: 55px; display: inline-block;}
+.followHolder { position: relative; display: inline-block; float: right; margin-top: 30px;}
+.followHolder span { position: relative; display: inline-block; color: #5E3D3D; font-family: Arial; font-size: 10px; text-transform: uppercase; line-height: 24px; margin-right: 10px;}
+.followHolder > ul { display: inline-block;}
+.followHolder > ul > li { display: inline-block; float: left;}
+.followHolder > ul > li > a { }
+/* =Menu
+--------------------------------------------------------------------------------------- */
+.menu { position: relative; z-index: 0; display: inline-block; float: left;}
+#menu { z-index: 3; position: relative; width: 950px; white-space: nowrap;}
+#menu > li { position: relative; width: 187px; height: 56px; display: inline-block;}
+#menu > li > a{color: #fff; font-family: 'Oswald', sans-serif; display: block; text-transform: uppercase; font-size: 16px; float: left;  position: relative;}
+#menu > li > a:hover{text-decoration: none;}
+#menu > li.active > a{text-decoration: none;}
+.submenu_1{ position: relative; z-index: 3; width: 146px; float: left; border-radius: 10px; left: 189px; top: -26px; background: #332531; background: -moz-linear-gradient(top, #3a2b37, #2b2029); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a2b37), color-stop(100%,#2b2029)); background: -webkit-linear-gradient(top, #3a2b37, #2b2029); background: -o-linear-gradient(top, #3a2b37, #2b2029); background: -ms-linear-gradient(top, #3a2b37, #2b2029); background: linear-gradient(top, #3a2b37, #2b2029);}
+.submenu_1 li{position: relative; display: inline-block;float: left; width: 100%; height: 57px; background:url(../images/extra9.png) 0 100% no-repeat;}
+.submenu_1 a{font-family: 'Oswald', sans-serif; font-size: 13px; color: #fff; display: inline-block; text-transform:uppercase;  text-align: left;  font-weight: 400; line-height: 40px; width: 130px;height: 40px;padding: 8px 8px;text-indent: 8px;}
+.submenu_1 li:hover > a, .submenu_1 li.sfHover > a{text-decoration:none; background:url(../images/subOver.png) 50% 50% no-repeat;}
+.submenu_1 .bgNone{background: none;}
+.corner { background: url(../images/extra10.png) 0 0 no-repeat; position: absolute; top: 15px; left: -24px; display: inline-block; width: 25px; height: 19px;}
+.mText1{position: relative; color: #fff; z-index: 2; width: 164px; position: relative; display: inline-block; height: 61px;text-align: center;line-height: 55px;margin: 12px 12px;}
+.mOver{width: 190px; height: 85px; position: absolute; background: url(../images/extra5.png) 0 0% no-repeat; left: 0; bottom: -3px; display: block;}
+.mTextOver{position: absolute; color: #fff; z-index: 2; width: 164px;  display: inline-block; height: 61px;text-align: center;line-height: 55px;margin: 12px 12px;left: 0;bottom: -82px;}
+.imgHolder{width: 187px; height: 258px; position: relative; overflow: hidden;}
+.extraHolder{background: url(../images/extra2.png) 0 0 no-repeat; width: 189px; height: 82px; position: relative; float: left; top: -3px;overflow: hidden;display: inline-block;}
+/* =Content
+--------------------------------------------------------------------------------------- */
+.wrapper { width: 100%; overflow: hidden;}
+#content { position: relative; height: 446px; z-index: 1; padding-top: 90px;}
+#content > ul { width: 100%; height: 490px;}
+#content > ul > li { width: 100%; display: block; position: absolute;}
+.containerContent { margin: 0 auto; width: 950px; height: 510px; z-index: 1; position: relative;}
+.box { height: 510px; width: 100%; margin: 0 auto;}
+.box1 { height: 170px; width: 610px; margin: 0 auto; bottom: -50px; position: relative; text-align: center; top: 286px;}
+.divider1 { background: url(../images/divider1.png) 50% 100% no-repeat;}
+.divider2 { background: url(../images/divider2.png) 100% 20% no-repeat;}
+h2 { font-family: 'Merienda One', cursive; color: #362936; font-size: 25px; line-height: 32px; width: 100%; padding-bottom: 28px; padding-top: 40px; letter-spacing: -2px; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);}
+h3 { color: #B72635; font-size: 10px; line-height: 20px; width: 100%; font-weight: 400; text-transform: uppercase; padding-bottom: 6px;}
+#scrollSets { position: relative; height: 100px; text-align: center; overflow: hidden;}
+#scrollSets span { color: #B72635; text-transform: uppercase; font-size: 10px; line-height: 30px;}
+._item { text-align: center; width: 100%;}
+._link1 { color: #B72635; text-transform: uppercase; text-decoration: underline; font-size: 10px;}
+._icon1 { background: url(../images/extra6.png); display: inline-block; width: 45px; height: 45px; float: left; margin-right: 16px; text-align: center;}
+.text1 { font-family: 'Oswald', sans-serif; font-size: 16px; color: white; position: relative; width: 100%; display: inline-block; margin-top: 6px;}
+.text2 { font-size: 10px; color: white; position: relative; width: 100%; display: inline-block; line-height: 10px; text-transform: uppercase;}
+.img-ava { width: 283px; height: 194px; border: solid 1px #000;}
+.more { color: white; font-size: 10px; background: url(../images/moreSprite.png) 0 0 no-repeat; padding: 9px 12px; line-height: 9px; text-transform: uppercase;}
+.figure1 { position: relative; width: 100%; display: inline-block;}
+.figure1 img { float: left; margin-right: 10px; border: solid 1px #000;}
+.figure1 figcaption { width: 138px; position: relative; float: left;}
+.figure1 figcaption a { color: #B72635; font-size: 10px; line-height: 20px; text-transform: uppercase; text-decoration: none;}
+.navHolder { position: relative; height: 14px; margin-top: 14px;}
+#setNav { position: relative; display: inline-block;}
+#setNav > li { position: relative; float: left; display: block;}
+#setNav > li > a { background: url(../images/extra3.png) 0 0% no-repeat; width: 14px; height: 14px; display: inline-block;}
+/* =Page 2
+--------------------------------------------------------------------------------------- */
+._list1 { position: relative;}
+._list1 > li { display: inline-block; margin-bottom: 13px; background: url(../images/marker.png) 0 50% no-repeat;}
+._list1 > li > a { display: inline-block; margin-left: 16px; font-size: 13px; color: #8A7372;}
+._list1 > li > a:hover{ color: #bf2b3d; text-decoration: underline;}
+._list2 { position: relative; width: 230px;}
+._list2 > li { display: inline-block; margin-bottom: 30px;}
+._list2 .mBot1 { margin-bottom: 12px;}
+._list2 > li > a { display: inline-block;}
+/* =Page 3
+--------------------------------------------------------------------------------------- */
+.figure2 { position: relative; width: 280px; display: inline-block;}
+.figure2 img { float: left; margin-right: 20px;}
+.figure2 figcaption { width: 176px; position: relative; float: left;}
+._list3 { position: relative; width: 100%;}
+._list3 > li { display: inline-block; margin-bottom: 5px; width: 208px;}
+._marker1 { background: url(../images/marker.png) 0 36% no-repeat;}
+._list3 a { color: #B72635; margin-left: 15px;}
+._list3 a:hover { text-decoration: underline;}
+._list3 p { margin-left: 14px;}
+/* =Page 4
+--------------------------------------------------------------------------------------- */
+.btnHolder { position: absolute; top: 270px; width: 100%; z-index: 2;}
+.scrButn { position: relative; margin-right: 0px;}
+#jcarousel_1 > ul > li{width: 312px; height: 408px; position: relative;padding-right: 6px;}
+#jcarousel_1 > ul > li a{width: 312px; height: 408px; display: inline-block;}
+/*.zoomSp{display:block; position:absolute; left:0; top:0; width: 312px; height: 408px; z-index:3; background: url(../images/magnify.png) 50% 50% no-repeat #000;}*/
+/* =Footer
+--------------------------------------------------------------------------------------- */
+footer { position: absolute; bottom: 0; width: 100%; z-index: 1; height: 125px; background: url(../images/extra4.png);}
+.mainFooter { width: 980px; z-index: 2; margin: 0 auto; text-align: center;}
+.privHold { font-size: 10px; color: #EDEDED; text-transform: uppercase;}
+.textPrivacy { font-size: 10px; color: white; position: relative; display: inline-block; font-family: Arial; line-height: 20px; margin-top: 23px;}
+.color1 { color: #C02C3E;}
