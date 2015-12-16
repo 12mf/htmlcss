@@ -1,0 +1,66 @@
+/*---------------------------------------------------------------------------------
+
+    Theme Name: Studio Designs
+    Description: WordPress theme
+    Author: tungvt
+    Author URI: http://12mf.net/
+    Version: 1.0
+    Designed & Developed by tungvt
+    Theme URL: http://studiodesigns.12mf.net/
+ 
+-----------------------------------------------------------------------------------*/
+/* ===================== Importing Fonts and Icons ===================== */
+@import url("css/font-awesome.min.css");
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+
+/* ===================== RESET ===================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* ===================== GLOBAL ===================== */
+body {min-width:320px;color:#2d2d2d;margin:0 auto;background: #8a97a1 url('images/bg-body.jpg') repeat;
+	font: 16px/20px "Standard", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+p, ul, ol, dl, blockquote, figure, pre {line-height: 1.5;}
+p, ul, ol, dl {margin:0 0 1.5em;}
+a {text-decoration:none;color:#6fcde3;}
+button, input, optgroup, select, textarea {color:inherit;font:inherit;margin:0;}
+input {line-height:normal;}
+textarea {overflow:auto;}
+*, :before, :after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.clear {clear:both;}
+
+.wrapper {max-width:1000px;margin:0 auto;padding:20px 0;}
+
+/* ===================== HEADER ===================== */
+#header {width:100%;}
+
+/* ===================== MENU ===================== */
+.menu {float:left;width:100%;margin:0;}
+.menu li {float:left;border:1px solid #536c82;border-right:none;font-family:'Arimo';
+	background: #8ea8c3;
+	background: -moz-linear-gradient(top,  #8ea8c3 0%, #6a8095 100%);
+	background: -webkit-linear-gradient(top,  #8ea8c3 0%,#6a8095 100%);
+	background: linear-gradient(to bottom,  #8ea8c3 0%,#6a8095 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ea8c3', endColorstr='#6a8095',GradientType=0 );
+}
+.menu li a {display:block;padding:10px 36px;color:#fff;font-size:13px;}
+.menu li:hover {
+	background: #a0b4cc;
+	background: -moz-linear-gradient(top,  #a0b4cc 0%, #6e869e 100%);
+	background: -webkit-linear-gradient(top,  #a0b4cc 0%,#6e869e 100%);
+	background: linear-gradient(to bottom,  #a0b4cc 0%,#6e869e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0b4cc', endColorstr='#6e869e',GradientType=0 );
+}
+.menu li.active {
+	background: #798ea3;
+	background: -moz-linear-gradient(top,  #798ea3 0%, #93a8b9 100%);
+	background: -webkit-linear-gradient(top,  #798ea3 0%,#93a8b9 100%);
+	background: linear-gradient(to bottom,  #798ea3 0%,#93a8b9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#798ea3', endColorstr='#93a8b9',GradientType=0 );
+}
+.menu li:first-child {border-top-left-radius:5px;}
+.menu li:last-child {border-right:1px solid #536c82;border-top-right-radius:5px;}
+.menu li i {margin-right:10px;}
+
+#footer .menu li:first-child {border-bottom-left-radius:5px;border-top-left-radius:0;}
+#footer .menu li:last-child {border-bottom-right-radius:5px;border-top-right-radius:0;}
+
