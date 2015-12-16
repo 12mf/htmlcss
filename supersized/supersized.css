@@ -13,7 +13,8 @@
     2. Navigation Menu
     3. Supersized
     4. Footer
-    5. Responsive
+    5. Socials
+    6. Responsive
 */
 
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
@@ -46,11 +47,11 @@ body {background:#eee;font-family: 'Droid Sans', sans-serif;font-size:16px;}
 img {max-width:100%;display:block;}
 a {color:#42A5F5;text-decoration:none;}
 a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
-	-webkit-transition: color .2s linear;
-	-moz-transition: color .2s linear;
-	-o-transition: color .2s linear;
-	-ms-transition: all .2s linear;
-	transition: color .2s linear;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
 }
 
 /* ======================= 2. Navigation Menu ======================= */
@@ -92,7 +93,7 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 	-webkit-border-radius: 0;
 	border:1px solid #000;color:#8e857c;text-shadow:1px 1px 0 #050403;background-size:23px 18px, 100%;
 }
-.selectnav option {border:none;background:#1F1B18;outline:none;}
+.selectnav option {border:none;background:#1F1B18;outline:none;white-space:normal !important}
 #menu-toggle {background:url('images/toggle_icons.png') 0 -32px no-repeat;text-indent:-9999px;cursor:pointer;
 	display:none;width:32px;height:32px;position:absolute;left:117px;bottom:-5px;
 }
@@ -151,7 +152,7 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 }
 #thumb-list li:hover {cursor:pointer;}
 
-#slidecaption {width:100%;color:#fff;position:absolute;bottom:50px;
+#slidecaption {width:100%;color:#fff;position:absolute;bottom:51px;
 	background:rgba(0, 0, 0, .7) url('images/sec_highlight.png') no-repeat;
 	-webkit-border-top-left-radius: 25px;
 	-webkit-border-top-right-radius: 25px;
@@ -182,26 +183,54 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 #prevslide {background:url('images/slider/back.png') 50% no-repeat;}
 #nextslide {background:url('images/slider/forward.png') 50% no-repeat;}
 
-/* ======================= 5. Reponsive ======================= */
-@media(min-width:480px) {
+/* ======================= 5. Socials ======================= */
+.social-in-homepage, .social-in-page {position:fixed;top:0;right:80px;z-index:999;}
+.social-in-page {right:-2px;}
+.social-bookmarks.social-in-page ul li {float:none;display:block;overflow:hidden;}
+.social-in-page ul li, .social-in-page ul li a {
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.social-in-homepage ul li, .social-in-homepage ul li a {
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;;
+}
+.social-bookmarks {overflow:hidden;margin-bottom:20px;}
+.social-bookmarks ul li {float:left;display:inline;margin:0 2px 2px 0;padding:0 !important;list-style-type:none !important;background-color:rgba(0, 0, 0, 0.7);}
+.social-bookmarks ul li a {display:block;text-indent:-9999px;width:40px;height:40px;float:left;}
+.social-bookmarks .twitter a {background:url('images/social_icons.png') -80px 0 no-repeat;}
+.social-bookmarks .twitter a:hover {background:#48c4d2 url('images/social_icons.png') -80px -40px no-repeat;}
+.social-bookmarks .facebook a {background:url('images/social_icons.png') 0 0 no-repeat;}
+.social-bookmarks .facebook a:hover {background:#3b5998 url('images/social_icons.png') 0 -40px no-repeat;}
+
+/* ======================= 6. Reponsive ======================= */
+@media screen and (min-width:480px) {
 
 }
 
-@media(min-width:640px) {
-	#slidecaption {width:450px;position:fixed;bottom:50px;right:80px;}
+@media screen and (min-width:640px) {
+	#slidecaption {width:450px;position:fixed;right:80px;}
 }
 
-@media(min-width:830px) {
+@media screen and (min-width:830px) and (min-device-width:830px) {
 	#menu-wrap {width:266px;position:fixed;top:0;left:80px;}
-	.slidemenu {display:block;}
 	.selectnav {display:none;}
+	.slidemenu {display:block;}
 	#menu-toggle {display:block;}
 }
 
-@media(min-width:960px) {
+@media screen and (min-width:960px) {
     
 }
 
-@media(min-width:1200px) {
+@media screen and (min-width:1200px) {
 	
 }

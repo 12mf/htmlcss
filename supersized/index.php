@@ -8,12 +8,18 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
-<script type="text/javascript" src="js/fn.js"></script>
 <script type="text/javascript" src="js/fn.init.js"></script>
+<script type="text/javascript" src="js/fn.js"></script>
 
 </head>
 
 <body>
+	<div class="social-in-homepage social-bookmarks">
+		<ul>
+			<li class="twitter"><a href="javascript:;">twitter</a></li>
+			<li class="facebook"><a href="javascript:;">facebook</a></li>
+		</ul>
+	</div>
 
 	<div id="wrap-wide"></div>
 
