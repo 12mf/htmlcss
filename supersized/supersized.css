@@ -12,12 +12,15 @@
     1. Global
     2. Navigation Menu
     3. Supersized
-    4. Footer
-    5. Socials
-    6. Responsive
+    4. Main Content
+    5. Footer
+    6. Breadcrumb
+    7. Socials
+    8. Responsive
 */
 
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 
 /* ======================= 0. CSS Reset ======================= */
 *, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td {
@@ -43,7 +46,7 @@ em {font-style: italic;}
 .clear {clear:both;}
 
 /* ======================= 1. Global ======================= */
-body {background:#eee;font-family: 'Droid Sans', sans-serif;font-size:16px;}
+body {background:#eee;font-family:'Oswald', sans-serif;font-size:16px;}
 img {max-width:100%;display:block;}
 a {color:#42A5F5;text-decoration:none;}
 a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
@@ -66,13 +69,14 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 	border-bottom-left-radius: 25px;    
 }
 #logo {color:#fff;display:block;text-align:center;}
-#logo:hover {color:#b81a1a;}
+#logo:hover {color:#ad1313;}
 #menu-wrap .menu {width:80%;margin:0 auto;}
 .slidemenu {padding-top:25px;display:none;}
 .slidemenu ul li {position:relative;border-bottom:1px solid #777;padding:5px 0;}
-.slidemenu ul li a {display:block;color:#fff;padding:0;text-transform:uppercase;}
-.slidemenu ul li a:hover {color:#b81a1a;}
+.slidemenu ul li a {display:block;color:#fff;padding:0;text-transform:uppercase;font-weight:300;}
+.slidemenu ul li a:hover {color:#ad1313;}
 .slidemenu ul li:last-child {border-bottom:none;}
+#main-menu {display:none;} /* using for select nav js */
 .selectnav {display:block;width:80%;height:30px;margin:20px auto 0;padding:4px 5px 6px 5px;
 	overflow:hidden;vertical-align:middle;color:#ededed;text-shadow:1px 1px 0 #000;
 	-o-box-sizing: border-box;
@@ -165,7 +169,37 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 #slidecaption p {font:normal 13px/20px Helvetica, Arial, sans-serif;}
 #slidecaption .slider-caption {padding:25px;}
 
-/* ======================= 4. Footer ======================= */
+/* ======================= 4. Main Content ======================= */
+#wrap {position:relative;width:80%;left:0;margin:0 auto;top:10px;}
+#wrap .main {border-top:4px solid #ad1313;padding:25px 35px;margin-bottom:100px;position:relative;
+	background:rgba(255,255,255, 0.8);
+	-webkit-border-bottom-right-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -moz-border-radius-bottomright: 25px;
+    -moz-border-radius-bottomleft: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#entries {}
+#entries .page-title {color:#444;font-size:22px;line-height:28px;font-weight:400;border-bottom:1px solid #fff;
+	position:relative;padding:0 15px 15px 0;margin-bottom:40px;
+}
+#entries-toggle {background:url('images/toggle_icons.png') 0 -128px no-repeat;top:0;right:0;display:block;
+	width:32px;height:32px;position:absolute;text-indent:-9999px;cursor:pointer;
+}
+#entries-toggle.active {background:url('images/toggle_icons.png') 0 -160px no-repeat;}
+#entries .post-item {padding-bottom:40px;margin-bottom:40px;border-bottom:1px solid #eee;}
+#entries .post-meta, 
+#entries .post-meta a, 
+#entries .post-meta a:active {font-size:11px;text-transform:uppercase;color:#9E9E9E;padding-top:5px;font-weight:300;}
+#entries .post-meta a:hover {color:#ad1313;}
+#entries .post-title, #entries .post-title a {color:#444;font-size:18px;font-weight:normal;line-height:26px;
+	word-spacing:5px;text-transform:uppercase;padding:2px 0 10px;
+}
+#entries .post-title a:hover {color:#ad1313;}
+#entries .entry p {font-family:'Droid Sans', sans-serif;font-size:14px;line-height:20px;color:#333;padding-bottom:15px;}
+
+/* ======================= 5. Footer ======================= */
 #footer {width:100%;height:45px;z-index:4;background-color:rgba(0, 0, 0, .7);
 	position: fixed;bottom:0;left:0;border-top:4px solid #ad1313;
 }
@@ -183,7 +217,12 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 #prevslide {background:url('images/slider/back.png') 50% no-repeat;}
 #nextslide {background:url('images/slider/forward.png') 50% no-repeat;}
 
-/* ======================= 5. Socials ======================= */
+/* ======================= 6. Breadcrumb ======================= */
+#breadcrumb {position:absolute;left:0;margin-top:19px;font-size:12px;color:#999;}
+#breadcrumb a, #breadcrumb a:active {color:#666;}
+#breadcrumb a:hover {color:#333;}
+
+/* ======================= 7. Socials ======================= */
 .social-in-homepage, .social-in-page {position:fixed;top:0;right:80px;z-index:999;}
 .social-in-page {right:-2px;}
 .social-bookmarks.social-in-page ul li {float:none;display:block;overflow:hidden;}
@@ -211,7 +250,7 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 .social-bookmarks .facebook a {background:url('images/social_icons.png') 0 0 no-repeat;}
 .social-bookmarks .facebook a:hover {background:#3b5998 url('images/social_icons.png') 0 -40px no-repeat;}
 
-/* ======================= 6. Reponsive ======================= */
+/* ======================= 8. Reponsive ======================= */
 @media screen and (min-width:480px) {
 
 }
@@ -225,12 +264,22 @@ a:link, a:visited, a:active, a:hover {color:#000;cursor:pointer;
 	.selectnav {display:none;}
 	.slidemenu {display:block;}
 	#menu-toggle {display:block;}
+
+	#wrap {width:50%;left:140px;top:0;}
 }
 
 @media screen and (min-width:960px) {
-    
+
 }
 
-@media screen and (min-width:1200px) {
-	
+@media screen and (min-width:1024px) {
+	#wrap {width:60%;left:145px;}
 }
+
+@media screen and (min-width:1100px) {
+	#wrap {width:68%;}
+}
+
+/*@media screen and (min-width:960px) and (min-device-width:830px) {
+	
+}*/
